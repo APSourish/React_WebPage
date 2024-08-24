@@ -1,0 +1,1075 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  color: aqua;
+  overflow-x: hidden;
+  transition: 0.2s linear;
+}
+
+.Navigation{
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transition: 0.5s linear;
+}
+
+.NavContainer{
+  display: flex;
+  gap: 15%;
+  padding-left: 10%;
+  height: 80px;
+  position: relative;
+  top: 33px;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  background: linear-gradient(to left, rgb(255, 0, 255), rgb(0, 255, 255));
+}
+
+
+.NavItems{
+  display: flex;
+  gap: 8%;
+}
+.NavItems li{
+  list-style-type: none;
+  margin: 5%;
+  font-size: 30px;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
+}
+.NavItems li a{
+  text-decoration: none;
+  color: rgb(68, 67, 67);
+  transition: 0.2s;
+  cursor: pointer;
+}
+.NavItems li a:hover{
+  color: black;
+  text-shadow: 0 0 20px black;
+}
+.NavItems h1{
+  position: absolute;
+  top: -28%;
+  right: 5%;
+  font-size: 40px;
+  color: black;
+  font-family: "New Amsterdam","sans-serif";
+  cursor: pointer;
+  font-weight: 1;
+  padding: 10px;
+  border-radius: 20px;
+  backdrop-filter: blur(100px);
+  transition: 0.3s;
+}
+.NavItems h1:hover{
+  background-color: rgba(255, 255, 255, 0.364);
+  /* text-shadow: 0 0 3px black; */
+}
+.Logo{
+  height: 120px;
+  width: 120px;
+  z-index: 1;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  border: 12px solid aqua;
+  transition: 0.5s;
+}
+.LogoBorder{
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  margin: 10px;
+  border-radius: 50%;
+  box-shadow: inset 0 -10px 15px aqua;
+  z-index: 0;
+  top: -20px;
+  left: 10.85%;
+  transition: 0.5s;
+}
+
+.imgContainer{
+  height: 100vh;
+  /* border: 2px solid; */
+  /* display: inline; */
+  position: absolute;
+  /* width: 60%; */
+  left: 550px;
+  z-index: 100; 
+}
+
+.carousel{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  position: absolute;
+  top: 13%;
+}
+
+.imgContainer img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  transition: linear;
+}
+
+#bulk{
+  position: absolute;
+  border-radius: 10%;
+  bottom: 50%;
+  border-radius: 10%;
+}
+#muscular{
+  position: absolute;
+  bottom:-100px;
+  left: 50%;
+  border-radius: 10%;
+}
+#fitness{
+  position: absolute;
+  bottom: -200px;
+  left: 50%;
+  border-radius: 10%;
+}
+#sport{
+  position: absolute;
+  bottom: -300px;
+  left: 50%;
+  border-radius: 10%;
+}
+#yoga{
+  position: absolute;
+  bottom: -400px;
+  left: 50%;
+  border-radius: 10%;
+}
+
+
+.carouselContent{
+  /* border: 2px solid; */
+  width: 1000px;
+  height: 70%;
+  overflow: hidden;
+  transform: translate(0,10%);
+  position: fixed;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  z-index: 10;
+}
+
+#bulkHeading {
+  position: absolute;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 400px;
+}
+#bulkHeading h1{
+  font-size: 150px;
+  transform: translate(50%,-30%);
+  position: absolute;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+#bulkHeading p{
+  font-size: 40px;
+  transform: translate(50%,170%);
+  position: absolute;
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#muscleHeading{
+  position: absolute;
+  width: 400px;
+}
+#muscleHeading h1{
+  font-size: 150px;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#muscleHeading p{
+  transform: translate(0,-50%);
+  font-size: 40px;
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#fitnessHeading{
+  position: absolute;
+  width: 400px;
+}
+#fitnessHeading h1{
+  font-size: 100px;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#fitnessHeading p{
+  font-size: 40px;
+  transform: translate(0,-50%);
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#sportHeading{
+  position: absolute;
+  width: 400px;
+}
+#sportHeading h1{
+  font-size: 150px;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#sportHeading p{
+  font-size: 40px;
+  transform: translate(0,-50%);
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#yogaHeading{
+  position: absolute;
+  width: 400px;
+}
+#yogaHeading h1{
+  font-size: 150px;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#yogaHeading p{
+  font-size: 40px;
+  transform: translate(0,-50%);
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bgcimg{
+  position: absolute;
+}
+
+.bgcimg img{
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  filter: grayscale(100);
+  opacity: 0.4;
+}
+
+.outerimg{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  overflow: hidden;
+}
+
+.Section2{
+  height: 100vh;
+  width: 100%;
+  transform: translate(0,425vh);
+  transition: 0.5s linear;
+  /* background-color: black; */
+  /* border: 2px solid; */
+}
+
+.about_above{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  position: absolute;
+}
+
+.about_above img{
+  height: 250px;
+  width: 350px;
+  border-radius: 10%;
+  object-fit: cover;
+  /* filter: grayscale(100); */
+}
+
+
+.about_below{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+}
+
+.about_below img{
+  height: 300px;
+  width: 400px;
+  border-radius: 10%;
+  /* filter: grayscale(100); */
+}
+
+
+.aboutContent{
+  text-align: center;
+  /* border: 2px solid; */
+  position: absolute;
+  width: 70%;
+  left: 15%;
+  bottom: 10%;
+  backdrop-filter:blur(40px);
+  z-index: 1;
+  border-radius: 50px;
+}
+.aboutContent h1{
+  font-size: 100px;
+  font-family: "New Amsterdam", sans-serif;
+  /* border: 2px solid; */
+  margin: 0;
+  background: linear-gradient(45deg,aqua,rgb(255, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 50px;
+}
+
+.aboutContent p{
+  font-size: 35px;
+  font-family: "New Amsterdam", sans-serif;
+  width: 90%;
+  /* border: 2px solid; */
+  position: relative;
+  margin: 0;
+  padding: 5%;
+  border-radius: 50px;
+  background: linear-gradient(to right,aqua,rgb(255, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  z-index: 1;
+  /* transform: translate(0,0);  */
+}
+
+
+.bgc1{
+  position: absolute;
+  left: 65%;
+  /* top: 18%; */
+  height: 5%;
+  width: 5%;
+  border-radius: 50%;
+  background-color: aqua;
+  box-shadow: -100px 0 300px 75px aqua;
+  bottom: 40%;
+}
+
+.bgc2{
+  position: absolute;
+  height: 10%;
+  width: 10%;
+  background-color: violet;
+  left: 25%;
+  bottom: 48%;
+  box-shadow: 50px -100px 200px 70px violet;
+  rotate: 90deg;
+  border-radius: 50%;
+}
+
+.scrollimg1{
+  position: absolute;
+  left: 10%;
+  /* z-index: 2; */
+}
+.scrollimg2{
+  position: absolute;
+
+}
+.scrollimg3{
+  position: absolute;
+  right: 10%;
+}
+.belowimg1{
+  position: absolute;
+  right: 0;
+}
+.belowimg2{
+  position: absolute;
+}
+.dummy{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 550vh;
+  background-color: wheat;
+}
+.UpScroll{
+  height: 60px;
+  width: 60px;
+  bottom: 0;
+  position: fixed;
+  right: 0;
+  margin: 50px;
+  border-radius: 50%;
+  text-align: center;
+  color: black;
+  backdrop-filter: blur(5px);
+  text-shadow: 0 2px 4px black;
+  background: linear-gradient(to top,rgba(0, 255, 255, 0.493),rgba(255, 0, 255, 0.482));
+  cursor: pointer;
+  transition: 0.2s linear;
+  z-index: 100;
+}
+.UpScroll p{
+  font-size: 50px;
+  transform: translate(1px,-40px);
+  animation: toUp 2s infinite ease-in-out;
+}
+
+@keyframes toUp{
+  0%{
+    transform: translate(1px,-40px);
+  }
+  70%{
+    transform: translate(1px,-60px);
+  }
+}
+
+.Section3{
+  height: 100vh;
+  width: 100%;
+  /* border: 2px solid; */
+  transform: translate(0,435vh);
+  align-items: center;
+  position: absolute;
+  background: linear-gradient(to top,black,rgba(0, 255, 255, 0.148),rgba(255, 0, 255, 0.136),black);
+  z-index: 0;
+}
+
+.Section3 img{
+  height: 500px;
+  width: 300px;
+  object-fit: cover;
+  /* border: 1px solid; */
+  align-items: center;
+  transform: translate(0,50%);
+  rotate: 10deg;
+  transition: 0.7s ease-in-out;
+  left: 60%;
+  z-index: 5;
+}
+
+.slide1:nth-child(1){
+  position: absolute;
+  width: 450px;
+  bottom: 45%;
+  z-index: 5;
+  rotate: 0deg;
+}
+.slide1:nth-child(1):hover{
+  scale: 1.05;
+}
+.slide1:nth-child(2){
+  position: absolute;
+  bottom: 49%;
+  left: 25%;
+  z-index: 4;
+}
+.slide1:nth-child(3){
+  position: absolute;
+  bottom: 49%;
+  left: 20%;
+  z-index:3;
+}
+
+.slide1:nth-child(4){
+  position: absolute;
+  bottom: 49%;
+  left: 15%;
+  z-index: 2;
+}
+
+.slide1:nth-child(5){
+  position: absolute;
+  bottom: 52%;
+  left: 10%;
+  z-index: 1;
+  /* opacity: 0; */
+}
+
+.CoverSlide{
+  height: 60%;
+  width: 100%;
+  /* border: 2px solid; */
+  transform: translate(0,35%);
+  overflow: hidden;
+  /* background: linear-gradient(100deg,black,rgba(0, 255, 255, 0.234),rgba(255, 0, 255, 0.201),black); */
+  /* backdrop-filter: blur(1000px); */
+}
+.next{
+  position: absolute;
+  bottom: 30%;
+  left: 40%;
+  /* border: 2px solid; */
+  padding: 0 30px 0 30px;
+  border-radius: 10px;
+  background: linear-gradient(145deg,aqua,violet);
+  /* backdrop-filter: blur(10px); */
+  cursor: pointer;
+}
+.next p{
+  color: black;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 30px;
+  padding: 0;
+  margin: 10px;
+}
+
+.Section4{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 650vh;
+  gap: 2%;
+  /* border: 2px solid; */
+  backdrop-filter: blur(100px);
+  z-index: 5;
+}
+
+.premium_img{
+  height: 250px;
+  width: 300px;
+}
+
+.premium_img img{
+  height: 100%;
+  width: 100%;
+  transform: translate(0,45%);
+}
+.premium_img h1{
+  font-size: 40px;
+  position: relative;
+  left: 20px;
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.premiumSec{
+  z-index: 1;
+  /* border: 2px solid; */
+  /* backdrop-filter: blur(200px); */
+  max-width: 300px;
+}
+.premiumColor1{
+  position: absolute;
+  z-index: 0;
+}
+.premiumColor2{
+  position: absolute;
+}
+.premiumColor3{
+  position: absolute;
+}
+.premiumSec ul{
+  position: relative;
+  top: 15%;
+}
+.premiumSec ul h6{
+  font-size: 25px;
+  background: linear-gradient(to left,rgb(255, 0, 255),aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: translate(0,-30px);
+}
+.premiumSec ul li{
+  font-size: 25px;
+  margin-bottom: 30px;
+  transform: translate(0,-55px);
+  background: linear-gradient(to top,aqua,violet);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-family: "New Amsterdam", sans-serif;
+
+}
+
+.premiumColor1{
+  height: 150px;
+  width: 150px;
+  background-color: violet;
+  position: absolute;
+  bottom: -600vh;
+  left: 10%;
+  box-shadow: 0 0 0 20px violet;
+}
+.premiumColor2{
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+  position: absolute;
+  bottom: -600vh;
+  left: 50%;
+  box-shadow: 0 0 700px 1px aqua;
+}
+.premiumColor3{
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  position: absolute;
+  bottom: -590vh;
+  left: 80%;
+  box-shadow: 0 0 0 10px yellow;
+}
+
+.Section5{
+  transform: translate(0,660vh);
+  width: 100%;
+  position: absolute;
+  backdrop-filter: blur(80px);
+  z-index: 5;
+}
+.storeItem{
+  display: flex;
+}
+.storeItem div{
+  height: 350px;
+  width: 300px;
+  margin: 30px 30px 30px 45px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  object-fit: cover;
+  z-index: 5;
+}
+.storeItem div img{
+  height: 100%;
+  width: 100%;
+  transition: 0.2s;
+}
+.storeItem div h1{
+  position: relative;
+  bottom: 0;
+  transition: .6s ease-out;
+  /* border: 2px solid; */
+  background: linear-gradient(to left,aqua,violet);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: black;
+}
+.storeItem div p{
+  position: relative;
+  bottom: 680px;
+  font-size: 25px;
+  font-family: "New Amsterdam", sans-serif;
+  background: linear-gradient(to left,violet,aqua);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0 20px;
+  transition: .8s ease-in-out;
+}
+.storeItem div:hover h1{
+  bottom: 300px;
+}
+.storeItem div:hover img{
+  opacity: 0.2;
+  scale: 1.1;
+}
+.storeItem div:hover p{
+  bottom: 300px;
+}
+.storebgc1{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: aqua;
+  /* box-shadow: 0 0 100px 10px aqua; */
+  top: 820vh;
+  left: 15%;
+  z-index: 0;
+}
+.storebgc2{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: violet;
+  /* box-shadow: 0 0 10px 50px violet; */
+  top: 800vh;
+  right: 50%;
+  z-index: 0;
+}
+.storebgc3{
+  position: absolute;
+  height: 200px;
+  width: 100px;
+  background-color: yellow;
+  top: 820vh;
+  right: 15%;
+  z-index: 0;
+}
+.storebgc4{
+  position: absolute;
+  height: 100px;
+  width: 50px;
+  background-color: yellow;
+  top: 770vh;
+  left: 0;
+  z-index: 0;
+}
+
+.Section6{
+  position: absolute;
+  top: 880vh;
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+  width: 100%;
+}
+.TrainerImgContainer{
+  /* border: 2px solid; */
+  width: 40%;
+  height: 60%;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  backdrop-filter: blur(80px);
+  /* border: 2px solid; */
+  border-radius: 30px;
+  /* box-shadow: 0 0 50px 10px rgb(31, 31, 31); */
+  z-index: 5;
+  transform: translate(0,50%);
+  transition: 0.2s linear;
+}
+
+.TrainerImgContainer:hover{
+  backdrop-filter: blur(60px);
+  scale: 1.02;
+}
+#personalTrainer1{
+  /* border: 2px solid; */
+  /* max-height: 50vh; */
+  align-items: center;
+  justify-content: center;
+}
+#personalTrainer1 img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin: 10% 20% 0 5%;
+  position: relative;
+  border-radius: 50%;
+  /* filter:grayscale(10); */
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100);
+}
+
+#personalTrainer2 img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  margin: 5% 5% 5% 15%;
+  position: relative;
+  /* filter: grayscale(10); */
+  border-radius: 50%;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100);
+}
+#personalTrainer2 img:hover{
+  border-radius: 10%;
+  scale: 1.2;
+  filter: grayscale(0);
+}
+#personalTrainer1 img:hover{
+  border-radius: 10%;
+  scale: 1.2;
+  filter: grayscale(0);
+}
+#generalTrainer1 img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 10% 5% 5% 3%;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100);
+}
+#generalTrainer2 img{
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 5% 10%;
+  transition: 0.2s ease-in-out;
+  filter: grayscale(100);
+}
+#generalTrainer1 img:hover{
+  border-radius: 10%;
+  scale: 1.2;
+  filter: grayscale(0);
+}
+#generalTrainer2 img:hover{
+  border-radius: 10%;
+  scale: 1.2;
+  filter: grayscale(0);
+}
+.trainerbgc1{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: absolute;
+  box-shadow: 0 0 200px 30px aqua;
+  top: 940vh;
+  left: 15%;
+}
+.trainerbgc2{
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+  position: absolute;
+  box-shadow: 0 0 200px 30px violet;
+  top: 930vh;
+  left: 35%;
+}
+.trainerbgc3{
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+  position: absolute;
+  box-shadow: 0 0 200px 30px violet;
+  top: 930vh;
+  right: 35%;
+}
+.trainerbgc4{
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  position: absolute;
+  box-shadow: 0 0 200px 30px aqua;
+  top: 940vh;
+  right: 15%;
+}
+.trainer{
+  position: absolute;
+  font-family: "New Amsterdam", sans-serif;
+  transform: translate(0,10%);
+  /* border: 2px solid; */
+  font-size: 100px;
+  background: linear-gradient(145deg,aqua,rgb(255, 0, 255));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Section7{
+  position: absolute;
+  top: 1000vh;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  width: 100%;
+  /* border: 2px solid;  */
+  height: 100vh;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.Section7 .Competition{
+  height: 500px;
+  width: 300px;
+  /* border: 2px solid; */
+  text-align: center;
+  border-radius: 10px 10px 150px 150px;
+  backdrop-filter: blur(50px);
+  z-index: 5;
+  overflow: hidden;
+}
+.Section7 .ComHeading{
+  position: absolute;
+  font-size: 100px;
+  top: -100px;
+  font-family: "New Amsterdam", sans-serif;
+  background: linear-gradient(145deg,aqua,violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Competition img{
+  height: 60%;
+  width: 90%;
+  object-fit: cover;
+  align-items: center;
+  margin: 14px;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+}
+.Competition:nth-child(3) h1{
+  transform: translate(20px,-30px);
+}
+.Competition:hover img{ 
+  scale: 1.11;
+}
+.Competition h1{
+  position: absolute;
+  font-size: 45px;
+  transform: translate(25px,0);
+  font-family: "New Amsterdam", sans-serif;
+  width: 250px;
+  background: linear-gradient(145deg,black,black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.competitionbgc1{
+  position: absolute;
+  transform: translate(300px,930vh);
+  height: 100px;
+  width: 100px;
+  background-color: violet;
+  box-shadow: 0 0 100px 60px violet;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc2{
+  position: absolute;
+  transform: translate(300px,970vh);
+  height: 70px;
+  width: 70px;
+  background-color: aqua;
+  box-shadow: 0 0 100px 20px aqua;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc3{
+  position: absolute;
+  transform: translate(400px,950vh);
+  height: 70px;
+  width: 70px;
+  background-color: yellow;
+  box-shadow: 0 0 50px 5px yellow;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc4{
+  position: absolute;
+  transform: translate(700px,930vh);
+  height: 100px;
+  width: 100px;
+  background-color: yellow;
+  box-shadow: 0 0 100px 60px yellow;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc5{
+  position: absolute;
+  transform: translate(700px,970vh);
+  height: 70px;
+  width: 70px;
+  background-color: aqua;
+  box-shadow: 0 0 100px 20px aqua;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc6{
+  position: absolute;
+  transform: translate(750px,950vh);
+  height: 70px;
+  width: 70px;
+  background-color: violet;
+  box-shadow: 0 0 100px 10px violet;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc7{
+  position: absolute;
+  transform: translate(1100px,930vh);
+  height: 100px;
+  width: 100px;
+  background-color: aqua;
+  box-shadow: 0 0 100px 60px aqua;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc8{
+  position: absolute;
+  transform: translate(1100px,970vh);
+  height: 70px;
+  width: 70px;
+  background-color: violet;
+  box-shadow: 0 0 100px 20px violet;
+  border-radius: 50%;
+  z-index: 1;
+}
+.competitionbgc9{
+  position: absolute;
+  transform: translate(1150px,950vh);
+  height: 70px;
+  width: 70px;
+  background-color: yellow;
+  box-shadow: 0 0 100px 10px yellow;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.Footer{
+  position: relative;
+  top: 1000vh;
+  display: flex;
+  padding: 30px 100px;
+  /* background-color: rgba(245, 222, 179, 0.555); */
+  background-color: rgb(46, 46, 46);
+  align-items: center;
+  height: 40vh;
+}
+.Footer .FooterContent{
+  width: 30%;
+  color: white;
+  font-size: 15px;
+  transform: translate(-50px,0);
+}
+.Footer .FooterContent:nth-child(1){
+  margin: 60px;
+  width: 40%;
+}
+.Footer .FooterContent:nth-child(2) li{
+  margin: 30px 10px;
+  list-style-type: none;
+}
+.Footer .FooterContent:nth-child(3) li{
+  margin: 47px 10px;
+  list-style-type: none;
+}
+.Footer .FooterContent:nth-child(4) li{
+  margin: 47px 10px;
+  transform: translate(-70px,0);
+  list-style-type: none;
+}
+
+.Footer .FooterContent:nth-child(5) ul{
+  list-style-type: none;
+  position: absolute;
+  display: flex;
+  gap: 10%;
+  padding: 0;
+  transform: translate(-80px,-100px);
+  text-align: center;
+  width: 380px;
+  height: 100px;
+  align-items: center;
+  border-radius: 30px;
+  background-color: black;
+  overflow: hidden;
+}
+.Footer .FooterContent:nth-child(5) li{
+  font-size: 40px;
+  margin: 0 0 0 27px ;
+  z-index: 5;
+  transition: 0.2s;
+}
+.mediaBgc{
+  position: absolute;
+  height: 70px;
+  width: 70px;
+  background: linear-gradient(to top, aqua,violet);
+  transform: translate(-75px,0);
+  border-radius: 50%;
+  transition: 0.3s;
+}
